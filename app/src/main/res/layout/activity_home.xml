@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/monatech_background"
+    tools:context=".HomeActivity">
+
+
+    <TextView
+        android:id="@+id/txt_welcome"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="76dp"
+        android:gravity="center"
+        android:text="@string/welcome_message"
+        android:textColor="@color/birmud"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:contentDescription="false"
+        android:layout_width="409dp"
+        android:layout_height="357dp"
+        android:layout_marginTop="48dp"
+        android:src="@drawable/monatech_logoo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/txt_welcome"
+        app:layout_constraintTop_toTopOf="@+id/txt_welcome" />
+
+    <TextView
+        android:id="@+id/txt_deskripsi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="332dp"
+        android:gravity="center"
+        android:paddingLeft="70dp"
+        android:paddingRight="60dp"
+        android:text="Monitoring perkembangan balita dan informasi kesehatan balita"
+        android:textColor="@color/birmud"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imageView" />
+
+    <Button
+        android:id="@+id/btn_login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="70dp"
+        android:layout_marginTop="440dp"
+        android:layout_marginRight="70dp"
+        android:paddingVertical="10dp"
+        android:backgroundTint="@color/kuning"
+        android:text="@string/btn_login"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textColor="@color/birmud"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/imageView"
+        app:layout_constraintHorizontal_bias="0.644"
+        app:layout_constraintStart_toStartOf="@+id/imageView"
+        app:layout_constraintTop_toTopOf="@+id/imageView" />
+
+    <Button
+        android:id="@+id/btn_register"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginLeft="70dp"
+        android:layout_marginRight="70dp"
+        android:backgroundTint="@color/kuning"
+        android:text="@string/btn_register"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:paddingVertical="10dp"
+        android:textColor="@color/birmud"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@+id/btn_login"
+        app:layout_constraintHorizontal_bias="0.522"
+        app:layout_constraintStart_toStartOf="@+id/btn_login"
+        app:layout_constraintTop_toBottomOf="@+id/btn_login" />
+</androidx.constraintlayout.widget.ConstraintLayout>

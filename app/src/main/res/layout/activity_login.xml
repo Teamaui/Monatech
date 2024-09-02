@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_monatech"
+    android:orientation="vertical"
+    tools:context=".RegisterActivity">
+
+    <ImageView
+        android:id="@+id/backHome"
+        android:layout_width="50dp"
+        android:layout_height="47dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_arrow_left" />
+
+    <ImageView
+        android:id="@+id/logo_login"
+        android:layout_width="262dp"
+        android:layout_height="185dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="70dp"
+        android:src="@drawable/logo_monatech"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/user"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/logo_login"
+        android:layout_marginTop="60dp"
+        android:background="@drawable/backgrouond_txt"
+        android:hint="insert your username"
+        android:inputType="textEmailAddress"
+        android:paddingStart="20sp"
+        android:paddingEnd="10sp"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/logo_login"
+        app:layout_constraintStart_toStartOf="@id/logo_login"
+        app:layout_constraintTop_toBottomOf="@id/logo_login" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="100dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="5dp"
+        android:text="Username"
+        android:textColor="@color/birutua"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/user"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/logo_login"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/user"
+        android:layout_marginTop="52dp"
+        android:background="@drawable/bg_textview2"
+        android:hint="insert your password"
+        android:inputType="textPassword"
+        android:paddingStart="20sp"
+        android:paddingEnd="10sp"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/user"
+        app:layout_constraintHorizontal_bias="0.666"
+        app:layout_constraintStart_toStartOf="@+id/user"
+        app:layout_constraintTop_toBottomOf="@+id/user" />
+
+    <TextView
+        android:id="@+id/txt_password"
+        android:layout_width="100dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="20dp"
+        android:text="Password"
+        android:textColor="@color/birutua"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/password"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/user"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <Button
+        android:id="@+id/btn_login"
+        android:layout_width="300dp"
+        android:layout_height="60dp"
+        android:layout_below="@+id/password"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="64dp"
+        android:backgroundTint="@color/kuning"
+        android:text="LOGIN"
+        android:textColor="@color/birutua"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/password"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/password"
+        app:layout_constraintTop_toBottomOf="@+id/password" />
+
+    <TextView
+        android:id="@+id/buttontxt_forgot"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        android:clickable="true"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingBottom="10dp"
+        android:text="Forgot Password?"
+        android:textAlignment="center"
+        android:textColor="@color/birutua"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/btn_login"
+        app:layout_constraintHorizontal_bias="0.387"
+        app:layout_constraintStart_toStartOf="@+id/btn_login"
+        app:layout_constraintTop_toBottomOf="@+id/btn_login" />
+
+    <TextView
+        android:id="@+id/txt_welcome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="177dp"
+        android:layout_marginTop="48dp"
+        android:layout_marginEnd="176dp"
+        android:text="Welcome to"
+        android:textStyle="bold"
+        android:textColor="@color/birutua"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.523"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txt_dont_hvacc"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="20dp"
+        android:padding="10dp"
+        android:text="Don't have an account yet?"
+        android:textAlignment="viewStart"
+        android:textColor="@color/birutua"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.26"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_signUp"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="20dp"
+        android:clickable="true"
+        android:padding="10dp"
+        android:text="SIGN UP"
+        android:textAlignment="center"
+        android:textColor="@color/orange"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/txt_dont_hvacc" />
+</androidx.constraintlayout.widget.ConstraintLayout>

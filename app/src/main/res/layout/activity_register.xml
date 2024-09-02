@@ -1,0 +1,287 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:background="@drawable/bg_monatech"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegisterActivity">
+
+    <ImageView
+        android:id="@+id/backHome"
+        android:layout_width="50dp"
+        android:layout_height="47dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_arrow_left" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="307dp"
+        android:layout_height="691dp"
+        android:layout_marginHorizontal="30dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView6"
+        app:layout_constraintVertical_bias="0.24000001">
+
+
+        <TextView
+            android:id="@+id/tv_fullname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Fullname"
+            android:textColor="@color/birmud"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/edt_fullname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:background="@drawable/corner_btn"
+            android:backgroundTint="@color/orange"
+            android:hint="Masukan Nama Lengkap"
+            android:ems="10"
+            android:gravity="center_vertical"
+            android:inputType="text"
+            android:paddingStart="16dp"
+            android:paddingTop="8dp"
+            android:paddingEnd="16dp"
+            android:paddingBottom="8dp"
+            android:textColor="@color/white" />
+
+        <TextView
+            android:id="@+id/tv_username"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Username"
+            android:textColor="@color/birmud"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/edt_username"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:background="@drawable/corner_btn"
+            android:backgroundTint="@color/tosca"
+            android:hint="Masukan Username"
+            android:ems="10"
+            android:inputType="text"
+            android:paddingStart="16dp"
+            android:paddingTop="8dp"
+            android:paddingEnd="16dp"
+            android:paddingBottom="8dp"
+            android:textColor="@color/white" />
+
+        <TextView
+            android:id="@+id/tv_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Email"
+            android:textColor="@color/birmud"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/edt_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:background="@drawable/corner_btn"
+            android:backgroundTint="@color/kuning"
+            android:hint="Masukan Email"
+            android:ems="10"
+            android:inputType="textEmailAddress"
+            android:paddingStart="16dp"
+            android:paddingTop="8dp"
+            android:paddingEnd="16dp"
+            android:paddingBottom="8dp"
+            android:textColor="@color/white" />
+
+        <TextView
+            android:id="@+id/tv_tglLahir"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Tgl Lahir"
+            android:textColor="@color/birmud"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/edt_tglLahir"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:background="@drawable/corner_btn"
+            android:backgroundTint="@color/orange"
+            android:ems="10"
+            android:hint="dd/mm/yyyy"
+            android:inputType="text"
+            android:paddingStart="16dp"
+            android:paddingTop="8dp"
+            android:paddingEnd="16dp"
+            android:focusable="false"
+            android:paddingBottom="8dp"
+            android:textColor="@color/white" />
+
+        <TextView
+            android:id="@+id/tv_gender"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Gender"
+            android:textColor="@color/birmud"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <Spinner
+            android:id="@+id/s_gender"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/corner_btn"
+            android:backgroundTint="@color/orange"
+            android:paddingStart="16dp"
+            android:paddingTop="8dp"
+            android:paddingEnd="16dp"
+            android:paddingBottom="8dp"
+            android:textColor="@color/white"
+            />
+
+        <TextView
+            android:id="@+id/tv_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Password"
+            android:textColor="@color/birmud"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/edt_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:background="@drawable/corner_btn"
+            android:backgroundTint="@color/kuning"
+            android:hint="Masukan Password"
+            android:ems="10"
+            android:inputType="textPassword"
+            android:paddingStart="16dp"
+            android:paddingTop="8dp"
+            android:paddingEnd="16dp"
+            android:paddingBottom="8dp"
+            android:textColor="@color/white" />
+
+        <TextView
+            android:id="@+id/tv_noHp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="No Hp"
+            android:textColor="@color/birmud"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/edt_noHp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:background="@drawable/corner_btn"
+            android:backgroundTint="@color/orange"
+            android:hint="Masukan Nomor Hp"
+            android:ems="10"
+            android:inputType="phone"
+            android:paddingStart="16dp"
+            android:paddingTop="8dp"
+            android:paddingEnd="16dp"
+            android:paddingBottom="8dp"
+            android:textColor="@color/white" />
+
+        <TextView
+            android:id="@+id/tv_alamat"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Alamat"
+            android:textColor="@color/birmud"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/edt_alamat"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:background="@drawable/corner_btn"
+            android:backgroundTint="@color/tosca"
+            android:hint="Masukan Alamat"
+            android:ems="10"
+            android:inputType="text"
+            android:paddingStart="16dp"
+            android:paddingTop="8dp"
+            android:paddingEnd="16dp"
+            android:paddingBottom="8dp"
+            android:textColor="@color/white" />
+
+        <Button
+            android:id="@+id/btn_registar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="5dp"
+            android:backgroundTint="@color/kuning"
+            android:paddingVertical="10dp"
+            android:text="Registrasi"
+            android:textSize="15dp"
+            android:textColor="@color/birmud"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Sudah punya akun?"
+                android:textAlignment="textEnd" />
+
+            <TextView
+                android:id="@+id/tv_signIn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="1.5"
+                android:text="@string/underline"
+                android:textAlignment="textStart"
+                android:textColor="@color/birmud" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="45dp"
+        android:text="REGISTRATION"
+        android:textColor="@color/tosca"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

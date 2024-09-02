@@ -2,4 +2,19 @@
 <resources>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+    <color name="button">#103C76</color>
+    <color name="orange">#F06525</color>
+    <color name="tosca">#51B59F</color>
+    <color name="birmud">#5271ff</color>
+    <color name="kuning">#ffde59</color>
+    <color name="hitam">#000000</color>
+    <color name="background">#fffff2</color>
+    <color name="navy">#363062</color>
+    <color name="darkgrey">#435585</color>
+    <color name="lightgrey">#818FB4</color>
+    <color name="cream">#F5E8C7</color>
+    <color name="transparan">#00FFFFFF</color>
+    <color name="krem">#fffff2</color>
+    <color name="birutua">#103c76</color>
+    <color name="birumuda">#5271ff</color>
 </resources>
