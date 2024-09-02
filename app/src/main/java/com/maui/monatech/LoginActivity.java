@@ -31,6 +31,7 @@ public class LoginActivity extends AppCompatActivity {
             return insets;
         });
 
+        // BERFUNGSI MEMBERI BATAS TAMPILAN ANATARA STATUS BAR DAN NAVIGATION BAR
         View decorView = getWindow().getDecorView();
         decorView.setOnApplyWindowInsetsListener((view, insets) -> {
             int insetTop = insets.getSystemWindowInsetTop();
@@ -40,8 +41,9 @@ public class LoginActivity extends AppCompatActivity {
         });
 
         btnLogin = findViewById(R.id.btn_login);
-        toSignUp = findViewById(R.id.tv_signUp);
+        toSignUp = findViewById(R.id.tv_sign_up);
 
+        // MELAKUKAN AKSI MUNCUL NOTIF KETIKA TOMBOL LOGIN DI KLIK
         btnLogin.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -49,23 +51,21 @@ public class LoginActivity extends AppCompatActivity {
             }
         });
 
-        // Setel OnClickListener untuk tombol
+        // MELAKUKAN AKSI PINDAH HALAMAN KE REGISTER KETIKA TOMBOL DIKLIK
         toSignUp.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                // Buat Intent untuk berpindah ke SecondActivity
                 Intent intent = new Intent(LoginActivity.this, RegisterActivity.class);
                 startActivity(intent);
             }
         });
 
-        backHome = findViewById(R.id.backHome);
+        backHome = findViewById(R.id.btn_back_home);
 
-        // Setel OnClickListener untuk tombol
+        // MELAKUKAN AKSI PINDAH HALAMAN KE HOME KETIKA TOMBOL DIKLIK
         backHome.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                // Buat Intent untuk berpindah ke SecondActivity
                 Intent intent = new Intent(LoginActivity.this, HomeActivity.class);
                 startActivity(intent);
             }

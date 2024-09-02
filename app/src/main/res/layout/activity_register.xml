@@ -9,7 +9,7 @@
     tools:context=".RegisterActivity">
 
     <ImageView
-        android:id="@+id/backHome"
+        android:id="@+id/btn_back_home"
         android:layout_width="50dp"
         android:layout_height="47dp"
         android:layout_marginStart="5dp"
@@ -45,17 +45,18 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginBottom="5dp"
-            android:background="@drawable/corner_btn"
+            android:background="@drawable/btn_corner"
             android:backgroundTint="@color/orange"
             android:hint="Masukan Nama Lengkap"
-            android:ems="10"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="bold"
             android:gravity="center_vertical"
             android:inputType="text"
             android:paddingStart="16dp"
             android:paddingTop="8dp"
             android:paddingEnd="16dp"
-            android:paddingBottom="8dp"
-            android:textColor="@color/white" />
+            android:paddingBottom="8dp" />
 
         <TextView
             android:id="@+id/tv_username"
@@ -71,16 +72,17 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginBottom="5dp"
-            android:background="@drawable/corner_btn"
+            android:background="@drawable/btn_corner"
             android:backgroundTint="@color/tosca"
             android:hint="Masukan Username"
-            android:ems="10"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="bold"
             android:inputType="text"
             android:paddingStart="16dp"
             android:paddingTop="8dp"
             android:paddingEnd="16dp"
-            android:paddingBottom="8dp"
-            android:textColor="@color/white" />
+            android:paddingBottom="8dp"/>
 
         <TextView
             android:id="@+id/tv_email"
@@ -96,16 +98,17 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginBottom="5dp"
-            android:background="@drawable/corner_btn"
+            android:background="@drawable/btn_corner"
             android:backgroundTint="@color/kuning"
             android:hint="Masukan Email"
-            android:ems="10"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="bold"
             android:inputType="textEmailAddress"
             android:paddingStart="16dp"
             android:paddingTop="8dp"
             android:paddingEnd="16dp"
-            android:paddingBottom="8dp"
-            android:textColor="@color/white" />
+            android:paddingBottom="8dp"/>
 
         <TextView
             android:id="@+id/tv_tglLahir"
@@ -121,17 +124,18 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginBottom="5dp"
-            android:background="@drawable/corner_btn"
+            android:background="@drawable/btn_corner"
             android:backgroundTint="@color/orange"
-            android:ems="10"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="bold"
             android:hint="dd/mm/yyyy"
             android:inputType="text"
             android:paddingStart="16dp"
             android:paddingTop="8dp"
             android:paddingEnd="16dp"
             android:focusable="false"
-            android:paddingBottom="8dp"
-            android:textColor="@color/white" />
+            android:paddingBottom="8dp" />
 
         <TextView
             android:id="@+id/tv_gender"
@@ -146,7 +150,7 @@
             android:id="@+id/s_gender"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="@drawable/corner_btn"
+            android:background="@drawable/btn_corner"
             android:backgroundTint="@color/orange"
             android:paddingStart="16dp"
             android:paddingTop="8dp"
@@ -169,16 +173,17 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginBottom="5dp"
-            android:background="@drawable/corner_btn"
+            android:background="@drawable/btn_corner"
             android:backgroundTint="@color/kuning"
             android:hint="Masukan Password"
-            android:ems="10"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="bold"
             android:inputType="textPassword"
             android:paddingStart="16dp"
             android:paddingTop="8dp"
             android:paddingEnd="16dp"
-            android:paddingBottom="8dp"
-            android:textColor="@color/white" />
+            android:paddingBottom="8dp" />
 
         <TextView
             android:id="@+id/tv_noHp"
@@ -194,16 +199,17 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginBottom="5dp"
-            android:background="@drawable/corner_btn"
+            android:background="@drawable/btn_corner"
             android:backgroundTint="@color/orange"
             android:hint="Masukan Nomor Hp"
-            android:ems="10"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="bold"
             android:inputType="phone"
             android:paddingStart="16dp"
             android:paddingTop="8dp"
             android:paddingEnd="16dp"
-            android:paddingBottom="8dp"
-            android:textColor="@color/white" />
+            android:paddingBottom="8dp" />
 
         <TextView
             android:id="@+id/tv_alamat"
@@ -219,16 +225,17 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginBottom="5dp"
-            android:background="@drawable/corner_btn"
+            android:background="@drawable/btn_corner"
             android:backgroundTint="@color/tosca"
             android:hint="Masukan Alamat"
-            android:ems="10"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="bold"
             android:inputType="text"
             android:paddingStart="16dp"
             android:paddingTop="8dp"
             android:paddingEnd="16dp"
-            android:paddingBottom="8dp"
-            android:textColor="@color/white" />
+            android:paddingBottom="8dp" />
 
         <Button
             android:id="@+id/btn_registar"
@@ -253,18 +260,23 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
+                android:textColor="@color/birutua"
+                android:textSize="15sp"
+                android:textStyle="bold"
                 android:text="Sudah punya akun?"
                 android:textAlignment="textEnd" />
 
             <TextView
-                android:id="@+id/tv_signIn"
+                android:id="@+id/tv_sign_in"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="10dp"
                 android:layout_weight="1.5"
-                android:text="@string/underline"
-                android:textAlignment="textStart"
-                android:textColor="@color/birmud" />
+                android:text="@string/underline_sign_in"
+                android:textColor="@color/orange"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:textAlignment="textStart" />
         </LinearLayout>
 
     </LinearLayout>

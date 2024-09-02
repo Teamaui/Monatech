@@ -4,7 +4,8 @@
     <string name="btn_login">Login</string>
     <string name="btn_register">Register</string>
     <string name="btn_back"> back </string>
-    <string name="underline"><u>Sign in</u></string>
+    <string name="underline_sign_in"><u>Sign in</u></string>
+    <string name="underline_sign_up"><u>SIGN UP</u></string>
     <string-array name="itam_gender">
         <item>Laki-laki</item>
         <item>Perempuan</item>

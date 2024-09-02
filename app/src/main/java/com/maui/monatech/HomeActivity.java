@@ -28,6 +28,7 @@ public class HomeActivity extends AppCompatActivity {
             return insets;
         });
 
+        // BERFUNGSI MEMBERI BATAS TAMPILAN ANATARA STATUS BAR DAN NAVIGATION BAR
         View decorView = getWindow().getDecorView();
         decorView.setOnApplyWindowInsetsListener((view, insets) -> {
             int insetTop = insets.getSystemWindowInsetTop();
@@ -36,11 +37,10 @@ public class HomeActivity extends AppCompatActivity {
             return insets.consumeSystemWindowInsets();
         });
 
-        // Temukan tombol berdasarkan ID-nya
         buttonRegister = findViewById(R.id.btn_register);
         buttonLogin = findViewById(R.id.btn_login);
 
-        // Setel OnClickListener untuk tombol
+        // MELAKUKAN AKSI PINDAH HALAMAN KE REGISTER KETIKA TOMBOL DIKLIK
         buttonRegister.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -49,7 +49,7 @@ public class HomeActivity extends AppCompatActivity {
             }
         });
 
-        // Setel OnClickListener untuk tombol
+        // MELAKUKAN AKSI PINDAH HALAMAN KE LOGIN KETIKA TOMBOL DIKLIK
         buttonLogin.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

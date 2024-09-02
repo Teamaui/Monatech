@@ -4,12 +4,10 @@ import android.app.DatePickerDialog;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.DatePicker;
 import android.widget.EditText;
-import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.Spinner;
 import android.widget.TextView;
@@ -31,6 +29,8 @@ public class RegisterActivity extends AppCompatActivity {
     Calendar myCalender = Calendar.getInstance();
     EditText myDate;
     Button btnRegistrasi;
+    ImageView backHome;
+    TextView toSignIn;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -43,6 +43,7 @@ public class RegisterActivity extends AppCompatActivity {
             return insets;
         });
 
+        // BERFUNGSI MEMBERI BATAS TAMPILAN ANATARA STATUS BAR DAN NAVIGATION BAR
         View decorView = getWindow().getDecorView();
         decorView.setOnApplyWindowInsetsListener((view, insets) -> {
             int insetTop = insets.getSystemWindowInsetTop();
@@ -55,19 +56,19 @@ public class RegisterActivity extends AppCompatActivity {
         myDate = findViewById(R.id.edt_tglLahir);
         sGender = findViewById(R.id.s_gender);
         btnRegistrasi = findViewById(R.id.btn_registar);
+        backHome = findViewById(R.id.btn_back_home);
+        toSignIn = findViewById(R.id.tv_sign_in);
 
+        // KODE YANG BERFUNGSI DALAM PEMBUATAN SPINNER (DROPDOWN JENIS KELAMIN)
         ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(
                 this,
                 R.array.itam_gender,
                 R.layout.spinner_item
         );
-
-        // Mengatur layout dropdown
         adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
-
-        // Menghubungkan adapter ke spinner
         sGender.setAdapter(adapter);
 
+        // KODE YANG BERFUNGSI DALAM PEMBUATAN DATE PICKER (TANGGAL)
         DatePickerDialog.OnDateSetListener date = new DatePickerDialog.OnDateSetListener() {
             @Override
             public void onDateSet(DatePicker view, int year, int month, int dayOfMonth) {
@@ -79,6 +80,7 @@ public class RegisterActivity extends AppCompatActivity {
             }
         };
 
+        // MELAKUKAN AKSI MUNCUL PEMILIHAN TANGGAL KETIKA TOMBOL EDIT TEXT TANGGAL DI KLIK
         myDate.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -86,6 +88,7 @@ public class RegisterActivity extends AppCompatActivity {
             }
         });
 
+        // MELAKUKAN AKSI MUNCUL NOTIF KETIKA TOMBOL REGISTER DI KLIK
         btnRegistrasi.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -93,10 +96,7 @@ public class RegisterActivity extends AppCompatActivity {
             }
         });
 
-        // Temukan tombol berdasarkan ID-nya
-        ImageView backHome = findViewById(R.id.backHome);
-
-        // Setel OnClickListener untuk tombol
+        // MELAKUKAN AKSI PINDAH HALAMAN KE HOME KETIKA TOMBOL DIKLIK
         backHome.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -106,7 +106,7 @@ public class RegisterActivity extends AppCompatActivity {
             }
         });
 
-        TextView toSignIn = findViewById(R.id.tv_signIn);
+
 
         // Setel OnClickListener untuk tombol
         toSignIn.setOnClickListener(new View.OnClickListener() {
@@ -119,8 +119,9 @@ public class RegisterActivity extends AppCompatActivity {
         });
     }
 
+    // KODE FUNGSI DALAM MENGATUR DESAIN PEMBUATAN FORMAT TANGGAL. CONTOHNYA BISA PAKAI 29/22/2024 atau 29-22-2024
     private void updateDate() {
-        String myFormat = "MM/dd/yyyy";
+        String myFormat = "MM/dd/yyyy"; // KODE DALAM MENGATUR DESAIN FORMAT NYA
         SimpleDateFormat dateFormat = new SimpleDateFormat(myFormat, new Locale("id", "ID"));
         myDate.setText(dateFormat.format(myCalender.getTime()));
     }

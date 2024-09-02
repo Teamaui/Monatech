@@ -5,7 +5,7 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/monatech_background"
+    android:background="@drawable/bg_monatech"
     tools:context=".HomeActivity">
 
 
@@ -25,12 +25,12 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
-        android:id="@+id/imageView"
+        android:id="@+id/imgv_monatech"
         android:contentDescription="false"
         android:layout_width="409dp"
         android:layout_height="357dp"
         android:layout_marginTop="48dp"
-        android:src="@drawable/monatech_logoo"
+        android:src="@drawable/logo_monatech"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="@+id/txt_welcome"
@@ -51,7 +51,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/imageView" />
+        app:layout_constraintTop_toTopOf="@+id/imgv_monatech" />
 
     <Button
         android:id="@+id/btn_login"
@@ -68,10 +68,10 @@
         android:textColor="@color/birmud"
         android:textSize="20sp"
         android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="@+id/imageView"
+        app:layout_constraintEnd_toEndOf="@+id/imgv_monatech"
         app:layout_constraintHorizontal_bias="0.644"
-        app:layout_constraintStart_toStartOf="@+id/imageView"
-        app:layout_constraintTop_toTopOf="@+id/imageView" />
+        app:layout_constraintStart_toStartOf="@+id/imgv_monatech"
+        app:layout_constraintTop_toTopOf="@+id/imgv_monatech" />
 
     <Button
         android:id="@+id/btn_register"

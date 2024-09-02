@@ -10,7 +10,7 @@
     tools:context=".RegisterActivity">
 
     <ImageView
-        android:id="@+id/backHome"
+        android:id="@+id/btn_back_home"
         android:layout_width="50dp"
         android:layout_height="47dp"
         android:layout_marginStart="5dp"
@@ -24,7 +24,7 @@
         android:layout_width="262dp"
         android:layout_height="185dp"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="70dp"
+        android:layout_marginTop="104dp"
         android:src="@drawable/logo_monatech"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.496"
@@ -32,12 +32,13 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
-        android:id="@+id/user"
+        android:id="@+id/edt_username"
         android:layout_width="300dp"
         android:layout_height="50dp"
         android:layout_below="@+id/logo_login"
         android:layout_marginTop="60dp"
-        android:background="@drawable/backgrouond_txt"
+        android:background="@drawable/btn_corner"
+        android:backgroundTint="@color/orange"
         android:hint="insert your username"
         android:inputType="textEmailAddress"
         android:paddingStart="20sp"
@@ -59,18 +60,19 @@
         android:textColor="@color/birutua"
         android:textSize="20sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/user"
+        app:layout_constraintBottom_toTopOf="@+id/edt_username"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/logo_login"
         app:layout_constraintVertical_bias="1.0" />
 
     <EditText
-        android:id="@+id/password"
+        android:id="@+id/edt_password"
         android:layout_width="300dp"
         android:layout_height="50dp"
-        android:layout_below="@+id/user"
+        android:layout_below="@+id/edt_username"
         android:layout_marginTop="52dp"
-        android:background="@drawable/bg_textview2"
+        android:background="@drawable/btn_corner"
+        android:backgroundTint="@color/tosca"
         android:hint="insert your password"
         android:inputType="textPassword"
         android:paddingStart="20sp"
@@ -78,10 +80,10 @@
         android:textColor="@color/black"
         android:textSize="20sp"
         android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="@+id/user"
+        app:layout_constraintEnd_toEndOf="@+id/edt_username"
         app:layout_constraintHorizontal_bias="0.666"
-        app:layout_constraintStart_toStartOf="@+id/user"
-        app:layout_constraintTop_toBottomOf="@+id/user" />
+        app:layout_constraintStart_toStartOf="@+id/edt_username"
+        app:layout_constraintTop_toBottomOf="@+id/edt_username" />
 
     <TextView
         android:id="@+id/txt_password"
@@ -93,16 +95,16 @@
         android:textColor="@color/birutua"
         android:textSize="20sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/password"
+        app:layout_constraintBottom_toTopOf="@+id/edt_password"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/user"
+        app:layout_constraintTop_toBottomOf="@+id/edt_username"
         app:layout_constraintVertical_bias="1.0" />
 
     <Button
         android:id="@+id/btn_login"
         android:layout_width="300dp"
         android:layout_height="60dp"
-        android:layout_below="@+id/password"
+        android:layout_below="@+id/edt_password"
         android:layout_centerHorizontal="true"
         android:layout_marginStart="60dp"
         android:layout_marginTop="64dp"
@@ -111,10 +113,10 @@
         android:textColor="@color/birutua"
         android:textSize="20sp"
         android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="@+id/password"
+        app:layout_constraintEnd_toEndOf="@+id/edt_password"
         app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="@+id/password"
-        app:layout_constraintTop_toBottomOf="@+id/password" />
+        app:layout_constraintStart_toStartOf="@+id/edt_password"
+        app:layout_constraintTop_toBottomOf="@+id/edt_password" />
 
     <TextView
         android:id="@+id/buttontxt_forgot"
@@ -142,10 +144,10 @@
         android:layout_marginStart="177dp"
         android:layout_marginTop="48dp"
         android:layout_marginEnd="176dp"
-        android:text="Welcome to"
-        android:textStyle="bold"
+        android:text="LOGIN"
         android:textColor="@color/birutua"
-        android:textSize="15sp"
+        android:textSize="28sp"
+        android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.523"
         app:layout_constraintStart_toStartOf="parent"
@@ -168,13 +170,13 @@
         app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
-        android:id="@+id/tv_signUp"
+        android:id="@+id/tv_sign_up"
         android:layout_width="100dp"
         android:layout_height="50dp"
         android:layout_marginBottom="20dp"
         android:clickable="true"
         android:padding="10dp"
-        android:text="SIGN UP"
+        android:text="@string/underline_sign_up"
         android:textAlignment="center"
         android:textColor="@color/orange"
         android:textSize="15sp"
