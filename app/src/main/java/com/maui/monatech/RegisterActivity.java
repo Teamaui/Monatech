@@ -108,11 +108,10 @@ public class RegisterActivity extends AppCompatActivity {
 
 
 
-        // Setel OnClickListener untuk tombol
+        // MELAKUKAN AKSI PINDAH HALAMAN KE LOGIN KETIKA TOMBOL DIKLIK
         toSignIn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                // Buat Intent untuk berpindah ke SecondActivity
                 Intent intent = new Intent(RegisterActivity.this, LoginActivity.class);
                 startActivity(intent);
             }
